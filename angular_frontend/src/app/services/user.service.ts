@@ -9,26 +9,27 @@ export class UserService {
   currentUser: User;
   currentUserSubscription: Subscription;
   authenticationService: any;
+  uri = "https://localhost:5001/api";
   constructor(private http: HttpClient) {}
 
   getAll() {
-    return this.http.get<User[]>(`/users`);
+    return this.http.get<User[]>(`${this.uri}/User/`);
   }
 
   getById(id: number) {
-    return this.http.get(`/users/` + id);
+    return this.http.get(`${this.uri}/User/` + id);
   }
 
   register(user: User) {
-    return this.http.post(`/users/register`, user);
+    return this.http.post(`${this.uri}/User/`, user);
   }
 
   update(user: User) {
-    return this.http.put(`/users/` + user.id, user);
+    return this.http.put(`${this.uri}/User/` + user.id, user);
   }
 
   delete(id: number) {
-    return this.http.delete(`/users/` + id);
+    return this.http.delete(`${this.uri}/User/` + id);
   }
   getCurrentUser() {
     this.currentUserSubscription = this.authenticationService.currentUser.subscribe(

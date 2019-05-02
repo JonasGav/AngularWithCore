@@ -3,7 +3,6 @@ import { Subscription } from "rxjs";
 import { first } from "rxjs/operators";
 
 import { User } from "../../models";
-import sha256, { Hash, HMAC } from "fast-sha256";
 import { UserService, AuthenticationService } from "../../services";
 
 @Component({ templateUrl: "home.component.html" })
@@ -11,7 +10,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   currentUser: User;
   currentUserSubscription: Subscription;
   users: User[] = [];
-  passwords: User[] = [];
 
   constructor(
     private authenticationService: AuthenticationService,
@@ -26,7 +24,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loadAllUsers();
-    this.loadAllPasswordsHash();
   }
 
   ngOnDestroy() {
@@ -48,15 +45,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       .getAll()
       .pipe(first())
       .subscribe(users => {
-        this.users = users
-      });
-  }
-  private loadAllPasswordsHash() {
-    this.userService
-      .getAll()
-      .pipe(first())
-      .subscribe(passwords => {
-        this.passwords = sha256(passwords)
+        this.users = users;
       });
   }
 }
