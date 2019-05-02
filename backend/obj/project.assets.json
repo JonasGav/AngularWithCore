@@ -12688,11 +12688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Uzduotis\\backend\\backend.csproj",
+      "projectUniqueName": "F:\\AngularWithCore\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "F:\\Uzduotis\\backend\\backend.csproj",
+      "projectPath": "F:\\AngularWithCore\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\Johny\\.nuget\\packages\\",
-      "outputPath": "F:\\Uzduotis\\backend\\obj\\",
+      "outputPath": "F:\\AngularWithCore\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

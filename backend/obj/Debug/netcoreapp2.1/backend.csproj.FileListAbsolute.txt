@@ -12,3 +12,17 @@ F:\Uzduotis\backend\obj\Debug\netcoreapp2.1\backend.RazorTargetAssemblyInfo.cach
 F:\Uzduotis\backend\bin\Debug\netcoreapp2.1\backend.pdb
 F:\Uzduotis\backend\obj\Debug\netcoreapp2.1\backend.dll
 F:\Uzduotis\backend\obj\Debug\netcoreapp2.1\backend.pdb
+F:\AngularWithCore\backend\bin\Debug\netcoreapp2.1\backend.deps.json
+F:\AngularWithCore\backend\bin\Debug\netcoreapp2.1\backend.runtimeconfig.json
+F:\AngularWithCore\backend\bin\Debug\netcoreapp2.1\backend.runtimeconfig.dev.json
+F:\AngularWithCore\backend\bin\Debug\netcoreapp2.1\backend.dll
+F:\AngularWithCore\backend\bin\Debug\netcoreapp2.1\backend.pdb
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.csprojAssemblyReference.cache
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.csproj.CoreCompileInputs.cache
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.RazorAssemblyInfo.cache
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.RazorAssemblyInfo.cs
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.AssemblyInfoInputs.cache
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.AssemblyInfo.cs
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.RazorTargetAssemblyInfo.cache
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.dll
+F:\AngularWithCore\backend\obj\Debug\netcoreapp2.1\backend.pdb

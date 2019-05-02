@@ -1,27 +1,18 @@
-# vu_angular
+# Angular UI login/registration
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+#Naudotos technologijos:
 
-## Development server
+Frontend - Angular 7
+Backend - ASP.NET core
+Database - Postgesql
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#Pasileidimas
 
-## Code scaffolding
+Pasileidimas gan paprastas, database backupas įdėtas(bet nebutinas, galima ir is migrations pasidaryt database), reikia tik  pasimodifikuoti connection string pagal useri ir serveri, mano buvo naudotas (postges:postges) ir port default 5432.
+Parsisiuntus projektą, atidaryti Frontend folderį, paleisti per command prompt "npm install" ir po to "ng serve --open", to turi užtekti.
+Backend folderyje yra paliktas .sln failas, jį atsidarius per visual studio reiktų tiesiog paleisti projekta ir tiek.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#Žiniai
 
-## Build
+Visas projektas sukonfiguruotas taip kad backend turi klausytis ant 5001 port, database ant 5432.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
