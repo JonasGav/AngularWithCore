@@ -89,6 +89,10 @@ namespace backend.Controllers
             {
                 return BadRequest(ModelState);
             }
+            if ((_context.Users.SingleOrDefault(x => x.Username == user.Username)) != null )
+            {
+                return BadRequest(new { message = "Username already exists" });
+            }
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();

@@ -20,7 +20,6 @@ namespace backend.Controllers
     public class AuthenticateController : ControllerBase
     {
         private readonly backendContext _context;
-        private readonly AppSettings _appSettings;
 
         public AuthenticateController(backendContext context)
         {
@@ -43,7 +42,21 @@ namespace backend.Controllers
             if (users == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
-            var tokenString = "fake token";
+            //var tokenString = "fake token";
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("Some random text for the secret");
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.id.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
 
             // return basic user info (without password) and token to store client side
             return Ok(new
